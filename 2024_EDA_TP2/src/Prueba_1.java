@@ -11,6 +11,11 @@ public class Prueba_1 {
         this.num = num;
         System.out.println("Este es el setNum");
     }
+
+    public Prueba_1(int num) {
+        this.num = num;
+        
+    }
     
     
     
