@@ -39,7 +39,7 @@ public class Main {
         System.out.println("Tiempo bubble: " + ( finalTime-startTime));
         System.out.println("Ordenado");
         ordenamiento2.muestra();
-        
+        System.out.println("Messi 10");
         
         
     }
