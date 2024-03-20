@@ -9,7 +9,7 @@ public class Prueba_1 {
     }    
     public void setNum(int num) {
         this.num = num;
-        System.out.println("Este es el setNum");
+        System.out.println("Los sout van adentro del metodo");
     }
     
     
