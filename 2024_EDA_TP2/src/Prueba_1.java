@@ -11,6 +11,11 @@ public class Prueba_1 {
         this.num = num;
         System.out.println("Los sout van adentro del metodo");
     }
+
+    public Prueba_1(int num) {
+        this.num = num;
+        
+    }
     
     
     
