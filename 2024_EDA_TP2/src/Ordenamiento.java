@@ -14,31 +14,29 @@ import java.util.Random;
  * @author DELL
  */
 public class Ordenamiento {
-
+    
     private int[] datos;
     private ArrayList<Integer> lista;
-
+    
     public Ordenamiento() {
         datos = new int[10000];
         lista = new ArrayList();
     }
-
+    
     public void carga() {
         Random rand = new Random();
         for (int i = 0; i < datos.length; i++) {
             datos[i] = rand.nextInt(10000); // Números aleatorios hasta 100
-            lista.add( rand.nextInt(10000) ); // Números aleatorios hasta 100
-           
+            lista.add(rand.nextInt(10000)); // Números aleatorios hasta 100
+            
         }
     }
     
-    
-
     public void muestra() {
         // System.out.println("Arreglo antes de ordenar:");
         System.out.println(Arrays.toString(datos));
     }
-
+    
     public void bubbleSort() {
         System.out.println("----------Bubblesort-----------------");
         int n = datos.length;
@@ -51,14 +49,14 @@ public class Ordenamiento {
                     datos[j + 1] = temp;
                     flag = false;
                 }
-
+                
             }
             if (flag) {
                 i = (n - 2);
             }
         }
     }
-
+    
     public void insertionSort() {
         System.out.println("----------InsertionSort-----------------");
         int n = datos.length;
@@ -73,7 +71,7 @@ public class Ordenamiento {
             datos[j + 1] = aux;
         }
     }
-
+    
     public void shellSort() {
         int n = datos.length;
         System.out.println("----------InsertionSort-----------------");
@@ -113,13 +111,11 @@ public class Ordenamiento {
             lista.addAll(cubeta);
         }
     }
-
-
     
     public void quickSort() {
         quickSort(0, lista.size() - 1);
     }
-
+    
     private void quickSort(int inicio, int fin) {
         if (inicio < fin) {
             int indiceParticion = particion(inicio, fin);
@@ -127,7 +123,7 @@ public class Ordenamiento {
             quickSort(indiceParticion + 1, fin);
         }
     }
-
+    
     private int particion(int inicio, int fin) {
         int pivote = lista.get(fin);
         int i = inicio - 1;

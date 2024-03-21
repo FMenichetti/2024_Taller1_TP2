@@ -32,19 +32,33 @@ public class Main {
         
         System.out.println("---------------------------");
         System.out.println("---------------------------");
+        Ordenamiento ordenamientoShell = new Ordenamiento();
+        ordenamientoShell.carga();
+
+        System.out.println("Antes de ordenar:");
+        ordenamientoShell.muestra();
+        startTime = System.currentTimeMillis();
+        ordenamientoShell.shellSort();
+        finalTime = System.currentTimeMillis();
+        System.out.println("Tiempo Shell: " + ( finalTime-startTime));
+        System.out.println("Ordenado");
+        ordenamientoShell.muestra();
         
-//         Ordenamiento ordenamientoBucket = new Ordenamiento();
-//        ordenamientoBucket.carga();
-//
-//        System.out.println("Antes de ordenar:");
-//        ordenamientoBucket.muestra();
-//        startTime = System.currentTimeMillis();
-//        ordenamientoBucket.bucketSort();
-//        finalTime = System.currentTimeMillis();
-//        System.out.println("Tiempo Bucket: " + ( finalTime-startTime));
-//        System.out.println("Ordenado");
-//        ordenamientoBucket.muestra();
-//        
+        System.out.println("---------------------------");
+        System.out.println("---------------------------");
+        
+         Ordenamiento ordenamientoBucket = new Ordenamiento();
+        ordenamientoBucket.carga();
+
+        System.out.println("Antes de ordenar:");
+        ordenamientoBucket.muestra();
+        startTime = System.currentTimeMillis();
+        ordenamientoBucket.bucketSort();
+        finalTime = System.currentTimeMillis();
+        System.out.println("Tiempo Bucket: " + ( finalTime-startTime));
+        System.out.println("Ordenado");
+        ordenamientoBucket.muestra();
+        
         System.out.println("---------------------------");
         System.out.println("---------------------------");
         
